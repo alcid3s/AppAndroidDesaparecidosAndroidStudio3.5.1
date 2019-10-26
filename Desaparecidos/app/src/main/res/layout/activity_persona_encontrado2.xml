@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_encontrado_persona2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dani_.desaparecidos.Personas.EncontradoPersona2Activity"
+    android:background="@drawable/f">
+
+    <EditText
+        android:id="@+id/Altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/AlturaId"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/Peso"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/PesoId"
+        android:layout_alignParentStart="true"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Tamano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/ColorCabelloId"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/ColorOjos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@android:color/background_light"
+        android:layout_below="@+id/ColorOjosId"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/FechaDesaparicion"
+        android:layout_below="@+id/FechaId"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/AlturaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Altura"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/ColorOjos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ColorOjosId"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/Tamano"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/ColorCabelloId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ColorCabello"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/Peso"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/PesoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Peso"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/Altura"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/FechaDesaparicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FechaId"
+        android:layout_marginTop="24dp"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/ColorOjos"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Siguiente"
+        android:layout_width="381dp"
+        android:layout_height="43dp"
+        android:text="@string/Siguiente"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

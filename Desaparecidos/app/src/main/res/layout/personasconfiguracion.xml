@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Nombre"
+        android:text="@string/Nombre"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:layout_below="@+id/Img"
+        android:textAlignment="center"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp" />
+
+    <TextView
+        android:text="@string/Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Edad"
+        android:textColor="#ce1309"
+        android:layout_below="@+id/Nombre"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/TipoFisico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TipoFisico"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_below="@+id/Edad"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/Genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Genero"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_below="@+id/TipoFisico"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/Piel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Piel"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/Genero"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/FechaDesaparicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FechaDesaparicion"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_below="@+id/Peligroso"
+        android:layout_toEndOf="@+id/Nombre" />
+
+    <TextView
+        android:text="@string/ColorCabello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ColorCabello"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_below="@+id/Apellidos"
+        android:layout_alignEnd="@+id/FechaDesaparicion" />
+
+    <TextView
+        android:text="@string/Provincia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Provincia"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/TipoFisico"
+        android:layout_alignBottom="@+id/TipoFisico"
+        android:layout_alignEnd="@+id/Peso" />
+
+    <TextView
+        android:text="@string/ColorOjos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ColorOjos"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_below="@+id/Img"
+        android:layout_alignStart="@+id/ColorCabello" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/Img"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/ColorOjos" />
+
+    <TextView
+        android:text="@string/Peligroso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Peligroso"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_below="@+id/ColorCabello"
+        android:layout_alignStart="@+id/Apellidos" />
+
+    <TextView
+        android:text="@string/Peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Peso"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_below="@+id/ColorOjos"
+        android:layout_alignEnd="@+id/ColorOjos" />
+
+    <TextView
+        android:text="@string/Altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Altura"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_below="@+id/Provincia"
+        android:layout_alignStart="@+id/Peso" />
+
+    <TextView
+        android:text="@string/Apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Apellidos"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_below="@+id/Altura"
+        android:layout_alignEnd="@+id/Altura" />
+
+    <Button
+        android:text="@string/Localizacion"
+        android:id="@+id/boton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/FechaDesaparicion"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/Peligroso"
+        android:textSize="12sp" />
+
+</RelativeLayout>

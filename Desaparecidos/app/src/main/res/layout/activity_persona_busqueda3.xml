@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_busqueda_persona3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dani_.desaparecidos.Personas.BusquedaPersona3Activity"
+    android:background="@drawable/f">
+    <TextView
+        android:text="Rellena los datos de busqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rellena"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
+    <TextView
+        android:id="@+id/PeligrosoId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Peligroso"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/TipoFisico"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/ProvinciaId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Provincia"
+        android:layout_below="@+id/Rellena"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/background_light" />
+    <TextView
+        android:id="@+id/TipoFisicoId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TipoFisico"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/Provincia2"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/Provincia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/ProvinciaId2"
+        android:inputType="text"
+        android:background="@android:color/background_light" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TipoFisicoId2"
+        android:id="@+id/TipoFisico"
+        android:entries="@array/fisico" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/PeligrosoId2"
+        android:id="@+id/Peligroso2"
+        android:entries="@array/peligro" />
+
+    <Button
+        android:id="@+id/Siguiente"
+        android:layout_width="381dp"
+        android:layout_height="43dp"
+        android:text="@string/Registrar"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/Peligroso2"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+
+

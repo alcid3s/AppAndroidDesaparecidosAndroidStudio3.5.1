@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_elegir_animal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dani_.desaparecidos.Animales.ElegirAnimalActivity"
+    android:background="@drawable/f">
+
+    <TextView
+        android:text="@string/Seleccionaunoparacontinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Select"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="@string/HeEncontrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:id="@+id/Encontrado"
+        android:layout_below="@+id/Select"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/HePerdido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Perdido"
+        android:layout_below="@+id/Encontrado"
+        android:layout_alignStart="@+id/Encontrado" />
+</RelativeLayout>

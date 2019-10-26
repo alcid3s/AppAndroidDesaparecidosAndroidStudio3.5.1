@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/Imagen"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Nombre"
+        android:text="Nombre"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="33dp"
+        android:layout_below="@+id/Imagen"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Tamano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Tamano"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/ColorPelo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="ColorPelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ColorPelo"
+        android:textColor="#ce1309"
+        android:layout_alignTop="@+id/Raza"
+        android:layout_alignStart="@+id/Nombre" />
+
+    <Button
+        android:text="Localizacion"
+        android:id="@+id/boton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/Tamano"
+        android:layout_alignStart="@+id/ColorPelo"
+        android:layout_alignEnd="@+id/Imagen" />
+
+    <TextView
+        android:text="FechaDesaparicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tamano"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/FechaDesaparicion"
+        android:layout_alignEnd="@+id/boton"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:text="Raza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Raza"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/Tipo"
+        android:layout_alignEnd="@+id/Tipo" />
+
+    <TextView
+        android:text="Genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Genero"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+        android:layout_above="@+id/boton"
+        android:layout_alignStart="@+id/Raza" />
+
+    <TextView
+        android:text="Tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Tipo"
+        android:textSize="13sp"
+        android:textColor="#ce1309"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/Imagen"
+        android:layout_toEndOf="@+id/Nombre" />
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_encontrado_persona"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dani_.desaparecidos.Personas.EncontradoPersonaActivity"
+    android:background="@drawable/f">
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_below="@+id/NombreId"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/ApellidoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Apellidos"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="71dp"
+        android:layout_below="@+id/Nombre"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <EditText
+        android:id="@+id/Apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_below="@+id/ApellidoId"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/EdadId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Edad"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="150dp"
+        android:layout_below="@+id/Apellido"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <EditText
+        android:id="@+id/ColorPelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="167dp"
+        android:inputType="number"
+        android:layout_below="@+id/EdadId"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_light" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Genero"
+        android:entries="@array/genero"
+        android:layout_below="@+id/GeneroId"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/Piel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PielId"
+        android:layout_below="@+id/Genero"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/Raza"
+        android:layout_below="@+id/PielId"
+        android:layout_alignParentStart="true"
+        android:textColor="?attr/actionMenuTextColor"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/NombreId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Nombre"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_marginTop="18dp"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/Genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GeneroId"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/ColorPelo"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Siguiente"
+        android:layout_width="381dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/Siguiente"
+        tools:layout_editor_absoluteY="240dp"
+        android:layout_marginBottom="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

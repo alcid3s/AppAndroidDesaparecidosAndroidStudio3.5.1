@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_busqueda_animal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dani_.desaparecidos.Animales.BusquedaAnimalActivity"
+    android:background="@drawable/f">
+
+    <TextView
+        android:text="@string/Tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/TipoId"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <TextView
+        android:text="@string/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tipo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/NombreId"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/NombreId"
+        android:layout_alignParentStart="true"
+        android:id="@+id/Nombre"
+        android:inputType="text"
+        android:background="@android:color/background_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_below="@+id/ColorPeloId"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ColorPelo"
+        android:background="@android:color/background_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/Raza"
+        android:inputType="text"
+        android:layout_below="@+id/RazaId"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/background_light" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TamanoId"
+        android:layout_alignParentStart="true"
+        android:id="@+id/Tamano"
+        android:layout_alignEnd="@+id/Raza"
+        android:entries="@array/tamano" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GeneroId"
+        android:layout_alignParentStart="true"
+        android:id="@+id/Genero"
+        android:layout_alignEnd="@+id/Tamano"
+        android:entries="@array/generoanimal" />
+
+    <TextView
+        android:text="@string/ColorPelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/ColorPeloId"
+        android:layout_below="@+id/Nombre"
+        android:layout_alignParentStart="true"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <TextView
+        android:text="@string/Raza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RazaId"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/ColorPelo"
+        android:layout_alignParentStart="true"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <TextView
+        android:text="@string/Tamano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/TamanoId"
+        android:layout_below="@+id/Raza"
+        android:layout_alignParentStart="true"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <Button
+        android:text="@string/Siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Siguiente"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/Genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/GeneroId"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:layout_below="@+id/Tamano"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/FechaDesaparicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FechaDesaparicionId"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:layout_below="@+id/Genero"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/FechaDesaparicion"
+        android:background="@color/cast_expanded_controller_progress_text_color"
+        android:inputType="date"
+        android:layout_below="@+id/FechaDesaparicionId"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Tipo"
+        android:entries="@array/tipo"
+        android:layout_below="@+id/TipoId"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
